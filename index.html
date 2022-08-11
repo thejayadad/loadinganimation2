@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: #d9d9d9;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .loader {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            margin: 50px auto;
+            width: 200px;
+        }
+
+        .loader div {
+            height: 20px;
+            width: 100%;
+            margin: 0 2px;
+            text-align: center;
+            animation: .5s infinite flip;
+        }
+
+        .loader div:nth-child(even){
+            animation-delay: .1s;
+        }
+
+        @keyframes flip {
+            50% { height: 50px; background: lightblue;}
+        
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="loader">
+        <div>H</div>
+        <div>E</div>
+        <div>L</div>
+        <div>L</div>
+        <div>O</div>
+        <div>W</div>
+        <div>O</div>
+        <div>R</div>
+        <div>L</div>
+        <div>D</div>
+    </div>
+</body>
+</html>
